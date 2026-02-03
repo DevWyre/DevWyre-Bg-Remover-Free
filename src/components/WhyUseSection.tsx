@@ -3,7 +3,12 @@ import React from 'react';
 const WhyUseSection = () => {
   return (
     <section style={{
-      background: 'white',
+      backgroundImage: `linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
+                       linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
+                       linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
+                       linear-gradient(-45deg, transparent 75%, #f0f0f0 75%)`,
+      backgroundSize: '20px 20px',
+      backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px',
       borderRadius: '0px',
       padding: '2rem',
       marginTop: '3rem',
@@ -20,7 +25,7 @@ const WhyUseSection = () => {
           Why Use This Site?
         </h2>
         <p style={{ fontSize: '1.125rem', color: '#475569' }}>
-          100% Free, Privacy-first background removal using WebGPU, all processing happens locally in your browser with full 4K resolution, and open-source transparency. See our <a href="https://github.com/DevWyre" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub repository</a>.
+          100% Free, Privacy-first background removal using WebGPU, all processing happens locally in your browser with full 4K resolution, and open-source transparency. See our <a href="https://github.com/DevWyre/DevWyre-Bg-Remover-Free" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub repository</a>.
         </p>
       </div>
 
