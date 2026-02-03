@@ -2,16 +2,11 @@
 const WhyUseSection = () => {
   return (
     <section style={{
-      backgroundImage: `linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
-                       linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
-                       linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
-                       linear-gradient(-45deg, transparent 75%, #f0f0f0 75%)`,
-      backgroundSize: '20px 20px',
-      backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px',
+      backgroundColor: 'white',
       borderRadius: '0px',
       padding: '2rem',
       marginTop: '3rem',
-      boxShadow: ' transparent, 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+      boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.06)',
       border: '1px solid #e2e8f0'
     }}>
       <div style={{ marginBottom: '2rem' }}>

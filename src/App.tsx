@@ -484,18 +484,19 @@ function App() {
                                         </button>
                                     </div>
 
-                                    <div style={{ 
-                                        display: 'grid', 
-                                        gridTemplateColumns: '1fr 1fr', 
+                                    <div style={{
+                                        display: 'grid',
+                                        gridTemplateColumns: '1fr 1fr',
                                         gap: '1.5rem',
-                                        height: 'calc(100% - 3.5rem)'
+                                        height: 'calc(100% - 3.5rem)',
+                                        gridAutoRows: 'minmax(300px, 1fr)'
                                     }}>
                                         {/* Original Image Column */}
                                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                                             <div style={{ marginBottom: '1rem' }}>
-                                                <h3 style={{ 
-                                                    fontSize: '0.875rem', 
-                                                    fontWeight: '500', 
+                                                <h3 style={{
+                                                    fontSize: '0.875rem',
+                                                    fontWeight: '500',
                                                     color: '#475569',
                                                     textTransform: 'uppercase',
                                                     letterSpacing: '0.05em',
@@ -506,9 +507,12 @@ function App() {
                                             </div>
                                             <div style={{
                                                 position: 'relative',
-                                                paddingBottom: '100%', // Maintain aspect ratio
+                                                width: '100%',
+                                                height: '100%',
+                                                aspectRatio: '1/1',
+                                                maxHeight: '500px',
                                                 borderRadius: '8px',
-                                                overflow: 'hidden',
+                                                overflow: 'auto',
                                                 background: '#f8fafc',
                                                 border: '1px solid #e2e8f0'
                                             }}>
@@ -531,9 +535,9 @@ function App() {
                                         {/* Processed Image Column */}
                                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                                             <div style={{ marginBottom: '1rem' }}>
-                                                <h3 style={{ 
-                                                    fontSize: '0.875rem', 
-                                                    fontWeight: '500', 
+                                                <h3 style={{
+                                                    fontSize: '0.875rem',
+                                                    fontWeight: '500',
                                                     color: '#475569',
                                                     textTransform: 'uppercase',
                                                     letterSpacing: '0.05em',
@@ -542,10 +546,14 @@ function App() {
                                                     Processed Result
                                                 </h3>
                                             </div>
-                                            <div style={{ 
-                                                flex: '1',
+                                            <div style={{
+                                                position: 'relative',
+                                                width: '100%',
+                                                height: '100%',
+                                                aspectRatio: '1/1',
+                                                maxHeight: '500px',
                                                 borderRadius: '8px',
-                                                overflow: 'hidden',
+                                                overflow: 'auto',
                                                 background: '#f8fafc',
                                                 border: '1px solid #e2e8f0'
                                             }}>
