@@ -1,4 +1,3 @@
-import React from 'react';
 
 const WhyUseSection = () => {
   return (
@@ -43,33 +42,5 @@ const WhyUseSection = () => {
   );
 };
 
-const FeatureCard = ({ title, description, emoji }: { title: string, description: string, emoji: string }) => (
-  <div style={{
-    background: '#f8fafc',
-    borderRadius: '8px',
-    padding: '1.5rem',
-    border: '1px solid #e2e8f0'
-  }}>
-    <div style={{ 
-      display: 'flex', 
-      alignItems: 'center', 
-      gap: '1rem',
-      marginBottom: '1rem'
-    }}>
-      <span style={{ fontSize: '2rem' }}>{emoji}</span>
-      <h4 style={{
-        fontSize: '1.25rem',
-        fontWeight: '600',
-        color: '#0f172a',
-        margin: 0
-      }}>{title}</h4>
-    </div>
-    <p style={{ 
-      fontSize: '1rem', 
-      color: '#64748b',
-      lineHeight: '1.5'
-    }}>{description}</p>
-  </div>
-);
 
 export default WhyUseSection;

@@ -5,7 +5,7 @@ import ColorPicker from './components/ColorPicker';
 import { loadModel, runInference, MODELS, ModelType } from './utils/onnxHelper';
 import { processImage, applyMask } from './utils/imageProcessing';
 import * as ort from 'onnxruntime-web';
-import { Loader2, Download, X, Palette, RefreshCw, CheckCircle, AlertCircle } from 'lucide-react';
+import { Loader2, Download, X, Palette, CheckCircle, AlertCircle } from 'lucide-react';
 import WhyUseSection from './components/WhyUseSection';
 
 function App() {
