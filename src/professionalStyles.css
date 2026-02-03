@@ -1,0 +1,151 @@
+/* Professional styling for background remover app */
+.professional-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.professional-header {
+    background: linear-gradient(135deg, #2c3e50, #1a2530);
+    padding: 1.5rem 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.professional-header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.professional-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #eaeaea;
+}
+
+.professional-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.professional-upload {
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: #f9fafb;
+}
+
+.professional-upload:hover {
+    border-color: #3b82f6;
+    background: #f0f7ff;
+}
+
+.professional-upload span {
+    font-weight: 500;
+    color: #4b5563;
+    font-size: 1.1rem;
+}
+
+.professional-button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.professional-button:hover {
+    background: #2563eb;
+}
+
+.professional-button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.professional-model-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.7rem;
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: white;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.professional-model-btn:hover {
+    border-color: #3b82f6;
+}
+
+.professional-model-btn.active {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.professional-status {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.professional-footer {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    background: linear-gradient(135deg, #2c3e50, #1a2530);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.professional-footer a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.professional-footer a:hover {
+    text-decoration: underline;
+}
+
+.professional-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .professional-grid {
+        grid-template-columns: 1fr;
+    }
+}
